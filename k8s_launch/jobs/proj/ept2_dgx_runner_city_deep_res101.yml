@@ -1,0 +1,53 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ex5-ood-datasets-proj2
+  namespace: nil
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: ex5-ood-datasets-proj2
+          image: nil
+          stdin: true
+          tty: true
+          volumeMounts:
+            - name: gcp-credentials
+              mountPath: /etc/gcp
+              readOnly: true
+            - mountPath: /dev/shm
+              name: shared-memory-hack
+          args:
+            [
+                "python3","rpl_corocl.code/main.py",
+                "--dgx",
+                "--gpus=1",
+                "--online",
+                "--gcloud"
+            ]
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+              memory: 100Gi
+              cpu: 5000m
+            requests:
+              memory: 100Gi
+              cpu: 5000m
+          env:
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: /etc/gcp/credentials.json
+
+      volumes:
+        - name: gcp-credentials
+          secret:
+            secretName: gcp
+            items:
+              - key: data-manager
+                path: credentials.json
+        - name: shared-memory-hack
+          emptyDir:
+            medium: Memory
+
+  backoffLimit: 1
+
