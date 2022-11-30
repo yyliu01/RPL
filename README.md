@@ -6,6 +6,8 @@
 > [Ian Reid](https://cs.adelaide.edu.au/~ianr/) and [Gustavo Carneiro](https://cs.adelaide.edu.au/~carneiro/)
 >
 
+![image](https://user-images.githubusercontent.com/102338056/204700808-6b1017ee-7876-4090-ab77-790a049c8e44.png)
+
 ### Installation
 please install the dependencies and dataset based on this [***installation***](./docs/installation.md) document.
 
@@ -14,7 +16,6 @@ please follow this [***instruction***](./docs/before_start.md) document to repro
 
 ## Results
 
----
 ### 1. cityscapes reports
 
 | methods 	| mIoU (class) | decrease | 
@@ -45,7 +46,6 @@ you can reproduce our results based on the supported checkpoints below:
 * in the final training, we adopt logger training epochs and more frequent validation to choose the potential best model for **black boxing test sets**.
 ## Acknowledgement & Citation 
 
----
 Our code is highly based on the [PEBAL](https://github.com/tianyu0207/PEBAL). 
 Please consider citing them in your publications if they help your research.
 ```bibtex
