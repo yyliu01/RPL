@@ -21,13 +21,13 @@ please follow this [***instruction***](./docs/before_start.md) document to repro
 
 ### 1. cityscapes reports
 
-| methods 	| mIoU (class) | decrease | 
-|:--------:	|:-----:	|:-----:	|
-|closed seg. **[[paper](https://arxiv.org/pdf/1812.01593.pdf)]** **[[code](https://github.com/NVIDIA/semantic-segmentation/tree/sdcnet)]**| 82.46 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=59c2112456c9ccfa371b9d07c14ad1af459a49c0c1dcb1b0f86206696724c7f7)]**	| nil' 	| |
-|dense-hybrid **[[paper](https://arxiv.org/pdf/2207.02606.pdf)]** **[[code](https://github.com/matejgrcic/DenseHybrid)]**| 82.06 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=0d7223c203dc2437367c61314ee055b8e7b7eb7f9b1667e330eec3855956b063)]**	| -0.40 	| |
-|meta-ood **[[paper](https://arxiv.org/pdf/2012.06575.pdf)]** **[[code](https://github.com/robin-chan/meta-ood)]**| 81.51 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=d34a108dc2b75f03eaac6bd790c631dbd8448c93a3a18ad870dc2102669dca8c)]**	| -0.95 	| |
-|pebal **[[paper](https://arxiv.org/pdf/2111.12264.pdf)]** **[[code](https://github.com/tianyu0207/PEBAL)]**| 81.19 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=bdaa6c69751b6a1cfe0c08db66f4ba96967a161124873e0a8fb6afbaf01f3098)]**	| -1.27 	| |
-|**ours** | **82.46 [[report](https://www.cityscapes-dataset.com/anonymous-results/?id=e51cc63dc225379f5a974d54cec04d6a4135481446d0180c3a950bb7d96d8c4c)]**	| **0.0** 	| |
+| methods 	| mIoU (class) |
+|:--------:	|:-----:	|
+|closed seg. **[[paper](https://arxiv.org/pdf/1812.01593.pdf)]** **[[code](https://github.com/NVIDIA/semantic-segmentation/tree/sdcnet)]**| 82.46 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=59c2112456c9ccfa371b9d07c14ad1af459a49c0c1dcb1b0f86206696724c7f7)]**	||
+|dense-hybrid **[[paper](https://arxiv.org/pdf/2207.02606.pdf)]** **[[code](https://github.com/matejgrcic/DenseHybrid)]**| 82.06 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=0d7223c203dc2437367c61314ee055b8e7b7eb7f9b1667e330eec3855956b063)]**	| |
+|meta-ood **[[paper](https://arxiv.org/pdf/2012.06575.pdf)]** **[[code](https://github.com/robin-chan/meta-ood)]**| 81.51 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=d34a108dc2b75f03eaac6bd790c631dbd8448c93a3a18ad870dc2102669dca8c)]**	|  |
+|pebal **[[paper](https://arxiv.org/pdf/2111.12264.pdf)]** **[[code](https://github.com/tianyu0207/PEBAL)]**| 81.19 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=bdaa6c69751b6a1cfe0c08db66f4ba96967a161124873e0a8fb6afbaf01f3098)]**	|  |
+|**ours** | **82.46 [[report](https://www.cityscapes-dataset.com/anonymous-results/?id=e51cc63dc225379f5a974d54cec04d6a4135481446d0180c3a950bb7d96d8c4c)]**	| |
 
 ### 2. checkpoints
 you can reproduce our results based on the supported checkpoints below:
