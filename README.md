@@ -1,12 +1,15 @@
 # RPL
-> [Residual Pattern Learning for Pixel-wise Out-of-Distribution Detection inSemantic Segmentation](https://arxiv.org/pdf/2211.14512.pdf)
+> [Residual Pattern Learning for Pixel-wise Out-of-Distribution Detection in Semantic Segmentation](https://arxiv.org/pdf/2211.14512.pdf)
 >
 > by Yuyuan Liu*, Choubo Ding*, [Yu Tian](https://yutianyt.com/), [Guansong Pang](https://sites.google.com/site/gspangsite),
 > [Vasileios Belagiannis](https://campar.in.tum.de/Main/VasileiosBelagiannis), 
 > [Ian Reid](https://cs.adelaide.edu.au/~ianr/) and [Gustavo Carneiro](https://cs.adelaide.edu.au/~carneiro/)
->
+> 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/residual-pattern-learning-for-pixel-wise-out/anomaly-detection-on-fishyscapes-1)](https://paperswithcode.com/sota/anomaly-detection-on-fishyscapes-1?p=residual-pattern-learning-for-pixel-wise-out)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/residual-pattern-learning-for-pixel-wise-out/anomaly-detection-on-road-anomaly)](https://paperswithcode.com/sota/anomaly-detection-on-road-anomaly?p=residual-pattern-learning-for-pixel-wise-out)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/residual-pattern-learning-for-pixel-wise-out/anomaly-detection-on-fishyscapes-l-f)](https://paperswithcode.com/sota/anomaly-detection-on-fishyscapes-l-f?p=residual-pattern-learning-for-pixel-wise-out)
 
-![image](https://user-images.githubusercontent.com/102338056/204700808-6b1017ee-7876-4090-ab77-790a049c8e44.png)
+<img src="https://user-images.githubusercontent.com/102338056/204701783-2df882f6-2d39-4bb8-9e57-d1a5174bd894.png" width="700" height="300" />
 
 ### Installation
 please install the dependencies and dataset based on this [***installation***](./docs/installation.md) document.
@@ -28,12 +31,11 @@ please follow this [***instruction***](./docs/before_start.md) document to repro
 
 ### 2. checkpoints
 you can reproduce our results based on the supported checkpoints below:
-1) rpl can download in **[here](https://drive.google.com/drive/folders/1XHyvdT2LJzbzVJyoNOUHVtReKGg6HkLq?usp=share_link)**, and
-1) rpl+corocl can download in **[here](https://drive.google.com/drive/folders/1rVaBRdOpS2JkAo-ZRO64jSZU0VbdZsDn?usp=share_link)**.
-* please note that we utilise **ONE** single model to perform all the evaluations to simulate driving scenarios in real life.
+* **rpl** can download in **[here](https://drive.google.com/drive/folders/1XHyvdT2LJzbzVJyoNOUHVtReKGg6HkLq?usp=share_link)**, and **rpl+corocl** can download in **[here](https://drive.google.com/drive/folders/1rVaBRdOpS2JkAo-ZRO64jSZU0VbdZsDn?usp=share_link)**.
+1) we claim that we utilise **ONE** single model to perform all the evaluations to simulate driving scenarios in real life.
   
 
-* for the segment-me-if-you-can (SMIYC), download the official **[evaluation code](https://github.com/adynathos/road-anomaly-benchmark)** (with an extra post-process stage) to achieve the reported results. we support the prediction & results in [here](https://drive.google.com/drive/folders/1oE9CQCyvdE-Jt6akNE3wFpnk_q6ueONs?usp=share_link). 
+2) for the segment-me-if-you-can (SMIYC), download the official **[evaluation code](https://github.com/adynathos/road-anomaly-benchmark)** (with an extra post-process stage) to achieve the reported performance. we support the prediction & results in [here](https://drive.google.com/drive/folders/1oE9CQCyvdE-Jt6akNE3wFpnk_q6ueONs?usp=share_link). 
 ### 3. training details
 
 1) you can download our **training log** via this [LINK](https://drive.google.com/drive/folders/1Ba3IpT4CY5hxvGkvBfHLNIcD89Ml8Hmm?usp=share_link).
@@ -43,7 +45,7 @@ you can reproduce our results based on the supported checkpoints below:
    1) <img src="https://user-images.githubusercontent.com/102338056/167979073-1c1b3144-8a72-4d8d-9084-31d7fdab3e9b.png" width="26" height="22"> overall information (e.g., training command line, hardware information and training time).
    2) <img src="https://user-images.githubusercontent.com/102338056/167978940-8c1f3d79-d062-4e7b-b56e-30b97d273ae8.png" width="26" height="22"> training details (e.g., loss curves, validation results and visualization)
    3) <img src="https://user-images.githubusercontent.com/102338056/167979238-4847430f-aa0b-483d-b735-8a10b43293a1.png" width="26" height="22"> output logs (well, sometimes might crash ...)
-* in the final training, we adopt logger training epochs and more frequent validation to choose the potential best model for **black boxing test sets**.
+* in the final training stage, we adopt logger training epochs and more frequent validation to choose the potential best model for **black boxing test sets**.
 ## Acknowledgement & Citation 
 
 Our code is highly based on the [PEBAL](https://github.com/tianyu0207/PEBAL). 
