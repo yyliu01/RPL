@@ -18,7 +18,7 @@ please install the dependencies and dataset based on this [***installation***](.
 please follow this [***instruction***](./docs/before_start.md) document to reproduce our results.
 
 ### Results
-our training logs and checkpoints are in this [***result***](./docs/before_start.md) page.
+our training logs and checkpoints are in this [***result***](./docs/result.md) page.
 
 ## Acknowledgement & Citation 
 
