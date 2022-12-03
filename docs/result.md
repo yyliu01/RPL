@@ -20,11 +20,11 @@ you can reproduce our results based on the supported checkpoints below:
 2) for the segment-me-if-you-can (SMIYC), download the official **[evaluation code](https://github.com/adynathos/road-anomaly-benchmark)** (with an extra post-process stage) to achieve the reported performance. we support the prediction & results in [here](https://drive.google.com/drive/folders/1oE9CQCyvdE-Jt6akNE3wFpnk_q6ueONs?usp=share_link).
 ### 3. training details
 
-1) you can download our **training log** via this [LINK](https://drive.google.com/drive/folders/1Ba3IpT4CY5hxvGkvBfHLNIcD89Ml8Hmm?usp=share_link).
+1) you can download our **training log** via this **[LINK](https://drive.google.com/drive/folders/1Ba3IpT4CY5hxvGkvBfHLNIcD89Ml8Hmm?usp=share_link)**.
 2) for more details, you can check our wandb log in this
-   [LINK](https://wandb.ai/yy/OoD_Segmentation/runs/3wh3o12o?workspace=user-pyedog1976),
+   **[LINK](https://wandb.ai/yy/OoD_Segmentation/runs/3wh3o12o?workspace=user-pyedog1976)**,
    where it includes:
    1) <img src="https://user-images.githubusercontent.com/102338056/167979073-1c1b3144-8a72-4d8d-9084-31d7fdab3e9b.png" width="26" height="22"> overall information (e.g., training command line, hardware information and training time).
    2) <img src="https://user-images.githubusercontent.com/102338056/167978940-8c1f3d79-d062-4e7b-b56e-30b97d273ae8.png" width="26" height="22"> training details (e.g., loss curves, validation results and visualization)
    3) <img src="https://user-images.githubusercontent.com/102338056/167979238-4847430f-aa0b-483d-b735-8a10b43293a1.png" width="26" height="22"> output logs (well, sometimes might crash ...)
-* in the final training stage, we adopt logger training epochs and more frequent validation to choose the potential best model for **black boxing test sets**.
+* in the final training stage, we adopt longer training epochs and more frequent validation to choose the potential best model for **black boxing test sets**.
