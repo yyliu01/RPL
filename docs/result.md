@@ -1,7 +1,8 @@
 
-## Results
+# Results
+*we claim that we utilise **ONE** single model to perform all the evaluations to simulate driving scenarios in real life.*
 
-### 1. cityscapes reports
+### cityscapes reports
 
 | methods 	| mIoU (class) |
 |:--------:	|:-----:	|
@@ -11,14 +12,12 @@
 |pebal **[[paper](https://arxiv.org/pdf/2111.12264.pdf)]** **[[code](https://github.com/tianyu0207/PEBAL)]**| 81.19 **[[report](https://www.cityscapes-dataset.com/anonymous-results/?id=bdaa6c69751b6a1cfe0c08db66f4ba96967a161124873e0a8fb6afbaf01f3098)]**	|  |
 |**ours** | **82.46 [[report](https://www.cityscapes-dataset.com/anonymous-results/?id=e51cc63dc225379f5a974d54cec04d6a4135481446d0180c3a950bb7d96d8c4c)]**	| |
 
-### 2. checkpoints
+### checkpoints
 you can reproduce our results based on the supported checkpoints below:
 * **rpl** can download in **[here](https://drive.google.com/drive/folders/1XHyvdT2LJzbzVJyoNOUHVtReKGg6HkLq?usp=share_link)**, and **rpl+corocl** can download in **[here](https://drive.google.com/drive/folders/1rVaBRdOpS2JkAo-ZRO64jSZU0VbdZsDn?usp=share_link)**.
-1) we claim that we utilise **ONE** single model to perform all the evaluations to simulate driving scenarios in real life.
 
-
-2) for the segment-me-if-you-can (SMIYC), download the official **[evaluation code](https://github.com/adynathos/road-anomaly-benchmark)** (with an extra post-process stage) to achieve the reported performance. we support the prediction & results in [here](https://drive.google.com/drive/folders/1oE9CQCyvdE-Jt6akNE3wFpnk_q6ueONs?usp=share_link).
-### 3. training details
+for the segment-me-if-you-can (SMIYC), download the official **[evaluation code](https://github.com/adynathos/road-anomaly-benchmark)** (with an extra post-process stage) to achieve the reported performance. we support the prediction & results in [here](https://drive.google.com/drive/folders/1oE9CQCyvdE-Jt6akNE3wFpnk_q6ueONs?usp=share_link).
+### training details
 
 1) you can download our **training log** via this **[LINK](https://drive.google.com/drive/folders/1Ba3IpT4CY5hxvGkvBfHLNIcD89Ml8Hmm?usp=share_link)**.
 2) for more details, you can check our wandb log in this
