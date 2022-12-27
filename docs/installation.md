@@ -32,7 +32,7 @@ $ cd RPL
 2) (optional) you might need to preprocess Cityscapes dataset
    in [here](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation), as we follow the
    common setting with **19** classes.
-3) specify the COCO dataset path in **code/config/config.py** file, which is **C.city_root_path**.
+3) specify the Cityscapes dataset path in **code/config/config.py** file, which is **C.city_root_path**.
 
 ### fishyscapes
 
@@ -92,6 +92,14 @@ fishyscapes/
     ├── mae_features
     ├── original
     └── semantic
+    
+segment_me
+├── dataset_AnomalyTrack
+│   ├── images
+│   └── labels_masks
+└── dataset_ObstacleTrack
+    ├── images
+    └── labels_masks
 
 road_anomaly/
 ├── entropy
