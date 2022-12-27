@@ -7,8 +7,8 @@ import torch
 
 class Trainer:
     """
-    loss_1 -> gambler loss; loss_2 -> energy loss
-    lr_scheduler -> cosine;
+    loss_1 -> energy loss; loss_2 -> contrastive loss
+    lr_scheduler -> poly;
     """
 
     def __init__(self, engine, loss1, loss2, tensorboard, validator, lr_scheduler, ckpt_dir, energy_weight):
