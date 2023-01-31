@@ -44,3 +44,4 @@ Please consider citing them in your publications if they help your research.
 - [x] RPL code has been released.
 - [x] RPL+CoroCL code has been released.
 - [ ] RPL+SOTAs code will be available soon.
+- [ ] The results based on extra training sets (e.g., Vistas, Wilddash2) will be available soon.
