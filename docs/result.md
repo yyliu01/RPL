@@ -21,7 +21,7 @@ for the segment-me-if-you-can (SMIYC), download the official **[evaluation code]
 
 1) you can download our **training log** via this **[LINK](https://drive.google.com/drive/folders/1Ba3IpT4CY5hxvGkvBfHLNIcD89Ml8Hmm?usp=share_link)**.
 2) for more details, you can check our wandb log in this
-   **[LINK](https://wandb.ai/yy/OoD_Segmentation/runs/3wh3o12o?workspace=user-pyedog1976)**,
+   **[LINK](https://wandb.ai/yy/RPL?workspace=user-pyedog1976)**,
    where it includes:
    1) <img src="https://user-images.githubusercontent.com/102338056/167979073-1c1b3144-8a72-4d8d-9084-31d7fdab3e9b.png" width="26" height="22"> overall information (e.g., training command line, hardware information and training time).
    2) <img src="https://user-images.githubusercontent.com/102338056/167978940-8c1f3d79-d062-4e7b-b56e-30b97d273ae8.png" width="26" height="22"> training details (e.g., loss curves, validation results and visualization)
