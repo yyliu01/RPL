@@ -31,7 +31,7 @@ $ cd RPL
 1) please download the Cityscapes dataset (gt_Fine).
 2) (optional) you might need to preprocess Cityscapes dataset
    in [here](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation), as we follow the
-   common setting with **19** classes.
+   common setting with **19** classes. 
 3) specify the Cityscapes dataset path in **code/config/config.py** file, which is **C.city_root_path**.
 
 ### fishyscapes
@@ -39,7 +39,7 @@ $ cd RPL
 1) for the time being, you can download from the official website in [here](https://fishyscapes.com/dataset).
 2) specify the coco dataset path in **code/config/config.py** file, which is **C.fishy_root_path**.
 
-*You can alternatively download both preprocessed fishyscapes & cityscapes datasets* [here](http://robotics.ethz.ch/~asl-datasets/Dissimilarity/data_processed.tar) (token from synboost GitHub).
+*You can alternatively download both preprocessed fishyscapes & cityscapes datasets* from [here](https://drive.google.com/drive/u/0/folders/1_5rZgWEDT9VbWch5dTkXWAOddUGqMmgE).
 
 ### coco (for outlier exposures)
 
