@@ -9,7 +9,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/residual-pattern-learning-for-pixel-wise-out/anomaly-detection-on-road-anomaly)](https://paperswithcode.com/sota/anomaly-detection-on-road-anomaly?p=residual-pattern-learning-for-pixel-wise-out)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/residual-pattern-learning-for-pixel-wise-out/anomaly-detection-on-fishyscapes-l-f)](https://paperswithcode.com/sota/anomaly-detection-on-fishyscapes-l-f?p=residual-pattern-learning-for-pixel-wise-out)
 
-<img src="https://user-images.githubusercontent.com/102338056/204701783-2df882f6-2d39-4bb8-9e57-d1a5174bd894.png" width="700" height="300" />
+<img src="https://github.com/yyliu01/RPL/assets/102338056/4307ce17-9c44-4e19-82b7-b0508f51ff28.png" width="700" height="300" />
 
 ### Installation
 please install the dependencies and dataset based on this [***installation***](./docs/installation.md) document.
