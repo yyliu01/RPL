@@ -44,7 +44,9 @@ class Trainer:
             ood_indices = [254 in i for i in city_mix_targets]
             global_ood_num = self.fetch_global_ood_num(local_ood_num=torch.tensor([sum(ood_indices)]).cuda())
             catch_anomaly += sum(global_ood_num).item()
-
+            
+            # the reason for such condition is provided in the issue below:
+            # https://github.com/yyliu01/RPL/issues/2#issuecomment-1737459734
             if all([i >= 2 for i in global_ood_num]):
                 input_data = torch.cat([city_mix_imgs, ood_imgs], dim=0)
                 half_batch_size = int(input_data.shape[0] / 2)
@@ -60,10 +62,11 @@ class Trainer:
                                                  ood_pred=ood_logits[ood_indices],
                                                  ood_proj=ood_proj[ood_indices], ood_gt=ood_targets[ood_indices])
             else:
-                ood_logits, ood_proj = None, None
                 city_vanilla_logits, city_mix_logits, _ = model(city_mix_imgs)
                 contras_loss = torch.tensor([.0], device=city_mix_logits.device)
-
+                ood_logits = torch.tensor([.0], device=city_mix_logits.device)
+                ood_proj, city_proj = torch.tensor([.0], device=city_mix_logits.device), torch.tensor([.0], device=city_mix_logits.device)
+                
             # energy loss
             loss_dict = self.energy_loss(logits=city_mix_logits, targets=city_mix_targets.clone(),
                                          vanilla_logits=city_vanilla_logits)
