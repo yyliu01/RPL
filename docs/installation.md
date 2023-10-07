@@ -39,7 +39,7 @@ $ cd RPL
 1) for the time being, you can download from the official website in [here](https://fishyscapes.com/dataset).
 2) specify the coco dataset path in **code/config/config.py** file, which is **C.fishy_root_path**.
 
-*You can alternatively download both preprocessed fishyscapes & cityscapes datasets* from [here](https://drive.google.com/drive/u/0/folders/1_5rZgWEDT9VbWch5dTkXWAOddUGqMmgE).
+*You can alternatively download both preprocessed fishyscapes & cityscapes datasets* from [here](https://drive.google.com/drive/u/0/folders/18qCyDfeVEeMtmGzPcXllQva_5NT-fTi1).
 
 ### coco (for outlier exposures)
 
