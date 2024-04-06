@@ -25,11 +25,12 @@ our training logs and checkpoints are in this [***result***](./docs/result.md) p
 Our code is highly based on the [PEBAL](https://github.com/tianyu0207/PEBAL). 
 Please consider citing them in your publications if they help your research.
 ```bibtex
-@article{liu2022residual,
-  title={Residual Pattern Learning for Pixel-wise Out-of-Distribution Detection in Semantic Segmentation},
+@inproceedings{liu2023residual,
+  title={Residual pattern learning for pixel-wise out-of-distribution detection in semantic segmentation},
   author={Liu, Yuyuan and Ding, Choubo and Tian, Yu and Pang, Guansong and Belagiannis, Vasileios and Reid, Ian and Carneiro, Gustavo},
-  journal={arXiv preprint arXiv:2211.14512},
-  year={2022}
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={1151--1161},
+  year={2023}
 }
 @inproceedings{tian2022pixel,
   title={Pixel-wise energy-biased abstention learning for anomaly segmentation on complex urban driving scenes},
